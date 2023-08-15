@@ -9,6 +9,22 @@
 for i in range(1,440):
 
 '''
+#not working
+# for i in range(1,440):
+#     if (((i-1)//40) < 2):
+#         print("%d-%d"%(1,i%80), end=" ")
+#     else:
+#         print("%d-%d"%(((i-1)//40), i%40),end=" ")
+
+
+
+
+
+
+
+
+
+
 
 
 for i in range(1,440):
