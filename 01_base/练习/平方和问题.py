@@ -1,25 +1,10 @@
 '''两个数字的平方和是2022，请问这2个数分别是多少'''
 
-
-# 所有數都可以用質因數表示
-# x^2 + y^2 = 2022
-# 質數數對
-# def fun(num, list=None):
-#     if list is None:
-#         list = []
-#     for i in range(2, num):
-#         while num % i == 0:
-#             list.append(i)
-#             num = int(num / i)
-#             if num > 1:
-#                 fun(num)
-#     return list
-# x = 9*5
-# print(fun(x))
-
+import math
+# brutal force method
 def fun(num,list=None):
-    max = int(num**0.5)
-    print("max =",max)
+    max = math.ceil(num**0.5) # ceiling 
+    print("max =", max)
     i = 1
     while(i <= max):
         j = 1
@@ -28,9 +13,9 @@ def fun(num,list=None):
                 return i,j
             j+=1
         i+=1
-    return [1,2]
+    return "Didn't found!"
 print(fun(25))
-    
+
 
 
 
